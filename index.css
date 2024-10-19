@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("./fonts/TTLakesRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("./fonts/TTLakesMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("./fonts/TTLakesBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "TT Lakes", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-weight: 500;
+}
+
+header {
+  border-top: 1px solid #d9fff5;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 98.61%);
+}
+
+h1 {
+  width: 100%;
+  max-width: 1056px;
+  margin: 0 auto;
+  color: #7e7e82;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+
+  margin: 24px auto;
+  padding: 0 32px;
+}
+
+.brands-container {
+  height: 177px;
+  width: 100%;
+  max-width: 1056px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.brands-item {
+  background-color: white;
+  width: 240px;
+  height: 72px;
+  min-width: 240px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.brands-item-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands-item-circle img {
+  width: 7.5px;
+}
+
+.show-more {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: flex-start;
+  cursor: pointer;
+  width: 100%;
+  max-width: 1056px;
+  margin: 0 auto;
+}
+.show-more img {
+  width: 8px !important;
+}
+.dots {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .brands-container {
+    height: 100%;
+    width: 100%;
+    max-width: 1056px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow: auto;
+    margin: auto;
+  }
+  .show-more {
+    display: none;
+  }
+
+  .dots {
+    display: flex;
+    align-self: center;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .dots-item {
+    width: 12px;
+    height: 12px;
+    background-color: #dddddd;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .dots-item-active {
+    background-color: #b5b6bc;
+  }
+}
